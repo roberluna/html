@@ -6,37 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primer html</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-    <h1>Hola mundo</h1>
-    <h2>Hola mundo con h2</h2>
 
-    <a href="http://fing.uach.mx/" target="_blank">Facultad de ingenieria</a>
-    
-    <img src="imagenes/blason.png" alt="faculta de ingenieria">
+    <form method="POST" action="https://google.com">
+        <p>Nombre</p>
+        <input type="text" name="nombre" required>
 
-    <hr>
-    <a href="http://fing.uach.mx">
-        <img alt="Facultad de ingenieria" src="imagenes/blason.png" style="width: 200px">
-    </a>
-    <hr>
+        <p>Apellido</p>
+        <input type="text" name="apellido" required>
 
-    <ol>
-        <li>Facultad de de ingenieria</li>
-        <li>Facultade de contaduraia</li>
-        <li>Facultade de derecho</li>
-        <li>Facultade de quimica</li>
-    </ol>
+        <p>Fecha de nacimiento</p>
+        <input type="date" name="fechaNacimiento">
 
-        <ol>
-            <li>
-                <a href="http://fing.uach.mx">Facultad ingenieria</a>
-            </li>
-            <li>
-                <a href="http://fca.uach.mx">Facultade de contaduraia</a>
-            </li>
-        </ol>
+        <p>Sexo</p>
+        <select name="sexo">
+            <option value="">Seleccionar</option>
+            <option value=1>Mujer</option>
+            <option value=2>Hombre</option>
+        </select>
 
-</body>
+        <p>Correo</p>
+        <input type="email" name="correo">
+
+        <p>Mensaje</p>
+        <textarea cols="40" rows="4" name="mensaje"></textarea>
+
+        <p>Archivo</p>
+        <input type="file" name="archivo">
+
+        <p>Edad</p>
+        <input type="number" name="edad">
+
+        <p>Passowrd</p>
+        <input type="password" name="password">
+
+        <br><br><br>
+        <input type="submit" value="Aceptar">
+
+    </form>        
+
+
+    </body>
 </html>
